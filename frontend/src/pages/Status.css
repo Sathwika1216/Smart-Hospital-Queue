@@ -1,0 +1,140 @@
+.status-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.status-form {
+  border-top: 5px solid #6366f1;
+}
+
+.card__title {
+  margin: 0 0 0.85rem;
+  font-size: 1.1rem;
+}
+
+.field {
+  display: block;
+  margin-bottom: 0.95rem;
+}
+
+.field__label {
+  display: block;
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+}
+
+.field__input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  padding: 0.75rem 0.85rem;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field__input--mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+.field__input:focus {
+  border-color: rgba(99, 102, 241, 0.55);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.btn {
+  border: 0;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  box-shadow: 0 14px 30px rgba(79, 70, 229, 0.22);
+  transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.alert {
+  border-radius: 12px;
+  padding: 0.75rem 0.85rem;
+  margin-bottom: 0.85rem;
+  font-weight: 700;
+}
+
+.alert--error {
+  color: #7f1d1d;
+  background: rgba(254, 226, 226, 0.85);
+  border: 1px solid rgba(220, 38, 38, 0.25);
+}
+
+.status-result {
+  border-top: 5px solid #22c55e;
+}
+
+.status-result__title {
+  margin: 0 0 0.75rem;
+}
+
+.status-kv {
+  margin: 0;
+}
+
+.status-kv__row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.status-kv__row:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.status-kv__row dt {
+  margin: 0;
+  color: #64748b;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.status-kv__row dd {
+  margin: 0;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.status-kv__cap {
+  text-transform: capitalize;
+}
+
+.status-kv__mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  word-break: break-all;
+}
