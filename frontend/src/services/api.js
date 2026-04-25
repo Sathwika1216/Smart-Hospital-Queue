@@ -5,7 +5,7 @@ import axios from 'axios';
  * Override with REACT_APP_API_URL when deploying to another host.
  */
 const api = axios.create({
-  baseURL:  'http://localhost:3999',
+  baseURL:  'https://smart-hospital-queue-n1md.onrender.com/',
   timeout: 15000,
   headers: {
     'Content-Type': 'application/json',
