@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect,  useState } from 'react';
 import PatientCard from '../components/PatientCard';
 import { patientApi, getErrorMessage } from '../services/api';
 import './Doctor.css';
@@ -55,7 +55,7 @@ function Doctor() {
       persistServingId(null);
     }
   }, []);
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     (async () => {
       setLoadingQueues(true);
