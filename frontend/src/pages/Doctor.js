@@ -63,7 +63,7 @@ function Doctor() {
       await restoreServing();
       await loadWaiting();
     })();
-  }, []);
+  }, [loadWaiting,restoreServing]);
 
   useEffect(() => {
     const id = window.setInterval(() => {
