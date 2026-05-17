@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </main>
       <footer className="app-footer">
-        <span>API base URL: {process.env.REACT_APP_API_URL || 'http://localhost:3999'}</span>
+        <span>API base URL: {process.env.REACT_APP_API_URL || 'https://smart-hospital-queue-n1md.onrender.com'}</span>
       </footer>
     </div>
   );
