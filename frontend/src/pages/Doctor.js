@@ -80,7 +80,7 @@ function Doctor() {
     try {
       console.log("🔥 CALLING API...");
   
-      const res = await fetch('http://localhost:3999/next/doctor', {
+      const res = await fetch("https://smart-hospital-queue-n1md.onrender.com/next/doctor", {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json'
