@@ -11,6 +11,7 @@ const { createApiRateLimiter } = require('./middleware/rateLimit');
 const { mongoSanitizeMiddleware } = require('./middleware/sanitize');
 
 const app = express();
+app.set('trust proxy',1);
 
 // Allow the React dev server (different port) to call this API from the browser
 app.use(
